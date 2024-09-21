@@ -1,4 +1,4 @@
-export const MyPlugin = () => {
+export const SignUpPage = () => {
     return (
       <div id="webcrumbs"> 
           <div className="w-[800px] shadow rounded-lg bg-neutral-50 min-h-[500px] p-6">
@@ -27,11 +27,14 @@ export const MyPlugin = () => {
                 <span className="text-sm">이미 아이디가 있나요?</span>
                 <a href="/login" className="text-sm text-primary ml-2">로그인</a>
               </div>
-              <div className="mt-4 text-lg text-primary text-center">
-                2024 goorm Deepdive 백엔드 1회차 Study Team 최적의 아이
-              </div>
+                <div className="mt-8 flex justify-center items-center space-x-2">
+                    <p className="text-orange-500 font-semibold">2024 goorm Deepdive 백엔드 1회차 Study Team 최적의 아이</p>
+                    <span className="material-symbols-outlined">🎤</span>
+                </div>
             </form>
           </div> 
       </div>
     )
   }
+
+  export default SignUpPage;
