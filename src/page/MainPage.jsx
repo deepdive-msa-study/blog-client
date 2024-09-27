@@ -3,13 +3,14 @@ import { useQuery } from '@tanstack/react-query';
 import { getMainPostList } from '../apis/api';
 
 const MainPage = () => {
-  const { isPending, error, data } = useQuery({
-    queryKey: ['mainPostData'],
-    queryFn: getMainPostList(),
-  });
+  const data = [];
+  // const { isPending, error, data } = useQuery({
+  //   queryKey: ['mainPostData'],
+  //   queryFn: getPostList(),
+  // });
 
-  if (isPending) return <p>로딩 중...</p>;
-  if (error) return <p>에러 발생: {error}</p>;
+  // if (isPending) return <p>로딩 중...</p>;
+  // if (error) return <p>에러 발생: {error}</p>;
 
   return (
     <div className='max-w-[1100px] p-6 bg-neutral-50 shadow-lg rounded-lg'>
